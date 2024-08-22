@@ -385,9 +385,9 @@ const generateForm = () => `
 const generateSubscribeLinks = (xrayUrl, singboxUrl, clashUrl) => `
   <div class="mt-5">
     <h2 class="mb-4">你的订阅链接如下:</h2>
-    ${generateLinkInput('Xray Link:', 'xrayLink', xrayUrl)}
-    ${generateLinkInput('SingBox Link:', 'singboxLink', singboxUrl)}
-    ${generateLinkInput('Clash Link:', 'clashLink', clashUrl)}
+    ${generateLinkInput('Xray 订阅:', 'xrayLink', xrayUrl)}
+    ${generateLinkInput('SingBox 订阅:', 'singboxLink', singboxUrl)}
+    ${generateLinkInput('Clash 订阅:', 'clashLink', clashUrl)}
     <div class="d-grid">
       <button class="btn btn-primary btn-lg" type="button" onclick="shortenAllUrls()">
         <i class="fas fa-compress-alt me-2"></i>短链接
