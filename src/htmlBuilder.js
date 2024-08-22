@@ -14,7 +14,7 @@ const generateHead = () => `
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sublink Worker</title>
+    <title>Archu订阅转换</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -357,14 +357,14 @@ const generateGithubLink = () => `
 
 const generateCardHeader = () => `
   <div class="card-header text-center">
-    <h1 class="display-4 mb-0">Sublink Worker</h1>
+    <h1 class="display-4 mb-0">Archu订阅转换</h1>
   </div>
 `;
 
 const generateForm = () => `
   <form method="POST" id="encodeForm">
     <div class="mb-4">
-      <label for="inputTextarea" class="form-label">Enter Your Share URLs:</label>
+      <label for="inputTextarea" class="form-label">请输入需要转换的节点:</label>
       <textarea class="form-control" id="inputTextarea" name="input" required placeholder="vmess://abcd..." rows="3"></textarea>
     </div>
     <div class="form-check form-switch mb-3">
@@ -376,7 +376,7 @@ const generateForm = () => `
     </div>
     <div class="d-grid mt-4">
       <button type="submit" class="btn btn-primary btn-lg">
-        <i class="fas fa-sync-alt me-2"></i>Convert
+        <i class="fas fa-sync-alt me-2"></i>转换
       </button>
     </div>
   </form>
@@ -384,13 +384,13 @@ const generateForm = () => `
 
 const generateSubscribeLinks = (xrayUrl, singboxUrl, clashUrl) => `
   <div class="mt-5">
-    <h2 class="mb-4">Your subscribe links:</h2>
+    <h2 class="mb-4">你的订阅链接如下:</h2>
     ${generateLinkInput('Xray Link:', 'xrayLink', xrayUrl)}
     ${generateLinkInput('SingBox Link:', 'singboxLink', singboxUrl)}
     ${generateLinkInput('Clash Link:', 'clashLink', clashUrl)}
     <div class="d-grid">
       <button class="btn btn-primary btn-lg" type="button" onclick="shortenAllUrls()">
-        <i class="fas fa-compress-alt me-2"></i>Shorten Links
+        <i class="fas fa-compress-alt me-2"></i>短链接
       </button>
     </div>
   </div>
