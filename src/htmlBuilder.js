@@ -369,7 +369,7 @@ const generateForm = () => `
     </div>
     <div class="form-check form-switch mb-3">
       <input class="form-check-input" type="checkbox" id="advancedToggle">
-      <label class="form-check-label" for="advancedToggle">Advanced Options</label>
+      <label class="form-check-label" for="advancedToggle">进阶设置</label>
     </div>
     <div id="advancedOptions">
       ${generateRuleSetSelection()}
